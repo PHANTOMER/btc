@@ -1,2 +1,2 @@
 # btc
-btc test task
+Api to communicate with bitcoind
