@@ -3,21 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Btc.Api", "Btc.Api\Btc.Api.csproj", "{C43F50E0-14A7-496E-B754-46564BDE66B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Btc.Api", "Btc.Api\Btc.Api.csproj", "{C43F50E0-14A7-496E-B754-46564BDE66B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Btc.DataAccess", "Btc.DataAccess\Btc.DataAccess.csproj", "{09437CCD-2AEB-4B53-997F-7A38AB1E0BDA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Btc.DataAccess", "Btc.DataAccess\Btc.DataAccess.csproj", "{09437CCD-2AEB-4B53-997F-7A38AB1E0BDA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Btc.Tests", "Btc.Tests\Btc.Tests.csproj", "{A9E40F18-6337-4A4E-8CF4-AE17122666F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Btc.Synchronization", "Btc.Synchronization\Btc.Synchronization.csproj", "{B8EF03F2-D559-4AAD-99D4-480C3407E3BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Btc.Synchronization", "Btc.Synchronization\Btc.Synchronization.csproj", "{B8EF03F2-D559-4AAD-99D4-480C3407E3BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Btc.Bitcoin", "Btc.Bitcoin\Btc.Bitcoin.csproj", "{6DECDE0C-0543-4A94-BB24-00EB59D04F90}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Btc.Bitcoin", "Btc.Bitcoin\Btc.Bitcoin.csproj", "{6DECDE0C-0543-4A94-BB24-00EB59D04F90}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Btc.Business", "Btc.Business\Btc.Business.csproj", "{4A3D50D2-77A2-4E35-82D3-4CDEFD4C8E6E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Btc.Business", "Btc.Business\Btc.Business.csproj", "{4A3D50D2-77A2-4E35-82D3-4CDEFD4C8E6E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Btc.Common", "Btc.Common\Btc.Common.csproj", "{0891032B-7DBF-44BA-AF30-99D80C6EFC56}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Btc.Common", "Btc.Common\Btc.Common.csproj", "{0891032B-7DBF-44BA-AF30-99D80C6EFC56}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Btc.Contracts", "Btc.Contracts\Btc.Contracts.csproj", "{B1691AD9-F2B0-4C95-8407-98CB34D6DCFC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Btc.Contracts", "Btc.Contracts\Btc.Contracts.csproj", "{B1691AD9-F2B0-4C95-8407-98CB34D6DCFC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,10 +31,6 @@ Global
 		{09437CCD-2AEB-4B53-997F-7A38AB1E0BDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09437CCD-2AEB-4B53-997F-7A38AB1E0BDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09437CCD-2AEB-4B53-997F-7A38AB1E0BDA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A9E40F18-6337-4A4E-8CF4-AE17122666F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A9E40F18-6337-4A4E-8CF4-AE17122666F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A9E40F18-6337-4A4E-8CF4-AE17122666F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A9E40F18-6337-4A4E-8CF4-AE17122666F4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B8EF03F2-D559-4AAD-99D4-480C3407E3BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B8EF03F2-D559-4AAD-99D4-480C3407E3BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8EF03F2-D559-4AAD-99D4-480C3407E3BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
