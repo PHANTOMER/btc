@@ -1,4 +1,5 @@
-﻿using Btc.Api.Extensions;
+﻿using System.Data.SqlClient;
+using Btc.Api.Extensions;
 using Btc.Api.Infrastructure;
 using Btc.Api.Validation;
 using Btc.Bitcoin;
@@ -56,7 +57,18 @@ namespace Btc.Api
                     fv.RegisterValidatorsFromAssemblyContaining<SendBtcValidator>();
                 });
 
-            services.AddDbContext<BtcContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContextPool<BtcContext>(options =>
+            {
+                var conn = new SqlConnectionStringBuilder(Configuration.GetConnectionString("DefaultConnection"))
+                {
+                    ConnectRetryCount = 5,
+                    ConnectRetryInterval = 2,
+                    MaxPoolSize = 600,
+                    MinPoolSize = 5
+                };
+
+                options.UseSqlServer(conn.ToString(), x => x.EnableRetryOnFailure());
+            });
 
             services.AddTransient<IWalletRepository, WalletRepository>();
             services.AddTransient<IBitcoinApiWrapper, BitcoinApiWrapper>();
