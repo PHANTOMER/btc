@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Btc.Bitcoin\Btc.Bitcoin.csproj" />
+    <ProjectReference Include="..\Btc.Common\Btc.Common.csproj" />
+    <ProjectReference Include="..\Btc.Contracts\Btc.Contracts.csproj" />
+    <ProjectReference Include="..\Btc.DataAccess\Btc.DataAccess.csproj" />
+  </ItemGroup>
+
+</Project>
